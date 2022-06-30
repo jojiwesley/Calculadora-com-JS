@@ -7,7 +7,7 @@
 }
 
 body {
-  background: linear-gradient(to right, #233329, #41b883);
+  background: linear-gradient(to right, #0d081b, #0eb5bf);
 }
 
 .grid-container {
@@ -15,6 +15,7 @@ body {
   justify-content: center;
   align-content: center;
   min-height: 100vh;
+  border-radius: 50px;
   grid-template-columns: repeat(4, 100px);
   grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
@@ -32,11 +33,16 @@ body {
   color: #111;
 }
 .grid-container > .operator {
-  background: #41b88375;
+  background: #1693ae;
 }
-
+.grid-container > .border-equals {
+  border-radius: 0px 0px 20px 0px;
+}
 .span-two {
   grid-column: span 2;
+}
+.grid-container > .border {
+  border-radius: 0px 0px 0px 20px;
 }
 
 .grid-container > .output {
@@ -47,6 +53,7 @@ body {
   align-items: flex-end;
   justify-content: space-around;
   padding: 10px;
+  border-radius: 20px 20px 0px 0px;
   word-wrao: break-word;
   word-break: break-all;
 }
